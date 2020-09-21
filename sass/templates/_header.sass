@@ -1,0 +1,56 @@
+@import '../mixins'
+.logo
+  height: 24px
+  width: 177px
+.search
+  position: relative
+  height: 40px
+  width: 350px
+  +tede
+  .search_input
+    width: 100%
+    padding-right: 70px
+    background: #F5FAFE
+    border-radius: 6px
+    height: 100%
+    +border   
+  .search_button
+    position: absolute
+    top: 0
+    right: 0
+    height: 40px
+    width: 65px
+    background: #EC1F46
+    border-radius: 0px 6px 6px 0px
+    +border
+header
+  display: flex
+  flex-wrap: wrap
+.row
+  width: 100%
+  display: flex
+  justify-content: center
+
+.header-container--top
+  padding-top: 40px
+  padding-bottom: 40px
+.login
+  height: 40px
+  width: 107px
+  display: flex
+  align-items: center
+  font-size: 14px
+  +tede
+  .login__img
+    margin-right: 18px
+    height: 40px
+    width: 40px
+    border-radius: 50%
+    object-fit: cover
+.row--bottom
+  background: #0A223D
+  height: 80px
+.header-link
+  +botrow 
+
+
