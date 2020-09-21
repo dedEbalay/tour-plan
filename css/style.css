@@ -21,15 +21,27 @@ body {
   color: #333333;
 }
 
+.row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .logo {
   height: 24px;
   width: 177px;
+  margin-right: 108px;
 }
 
 .search {
   position: relative;
   height: 40px;
   width: 350px;
+  margin-right: auto;
   text-decoration: none;
   color: black;
   font-family: "Mulish";
@@ -65,8 +77,8 @@ header {
       flex-wrap: wrap;
 }
 
-.row {
-  width: 100%;
+.row--top {
+  padding: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,6 +90,9 @@ header {
 .header-container--top {
   padding-top: 40px;
   padding-bottom: 40px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .login {
