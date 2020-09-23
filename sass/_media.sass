@@ -9,10 +9,11 @@
     max-width: 700px
   .logo
     margin-right: auto
-  .header-link
-    font-size: 12px
-    line-height: 15px
-    font-weight: bold
+  .header
+    &-link
+      font-size: 12px
+      line-height: 15px
+      font-weight: bold
   .search
     width: 340px
   .logo
@@ -20,11 +21,17 @@
     height: 18px
 @media ( max-width: 768px )
   .container
-    max-width: 90%
-@media ( max-width: 660px )
+    max-width: 85%
   .search
-    width: 300px
-@media ( max-width: 600px )
+    max-width: 300px
+  .logo
+    margin-right: 47px
+@media ( max-width: 700px )
+  .hotel-info
+    &__rating
+      display: none
+  .container
+    justify-content: space-between
   .search, .login, .row--bottom
     display: none
   .logo
@@ -42,4 +49,18 @@
       height: 1px
       width: 16px
       background-color: $text-color
+@media ( max-width: 480px )
+  .stars
+    max-width: 60px
+  .hotel-info
+    &__text
+      width: 100%
+      &__top
+        justify-content: space-between
+      &__offer
+        order: -1
+      &__name
+        width: 100%
+        margin-top: 14px
+  
   
