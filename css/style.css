@@ -19,6 +19,7 @@
 
 body {
   color: #333333;
+  margin: 0;
 }
 
 .row {
@@ -171,10 +172,17 @@ header {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 80%;
+    max-width: 700px;
   }
+}
+
+@media (max-width: 480px) {
   .search, .login, .row--bottom {
     display: none;
+  }
+  .logo {
+    width: 100px;
+    height: 14px;
   }
   .adaptive-button {
     height: 11px;
@@ -196,13 +204,6 @@ header {
     height: 1px;
     width: 16px;
     background-color: #333333;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    width: 100px;
-    height: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
