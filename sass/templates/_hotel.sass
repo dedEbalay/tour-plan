@@ -1,4 +1,88 @@
+@import '../_mixins'
+
 .hotel
+  &-grid
+    &_inside
+      width: 728px
+      max-height: 100%
+      margin-right: 20px
+    &-container
+      padding-bottom: 70px
+  &-person-img
+    height: 14px
+    width: 14px
+    margin-right: 13px
+  &-house-img
+    height: 12px
+    width: 13px
+    margin-right: 15px
+  &-phone-img
+    height: 13px
+    width: 13px
+    margin-right: 8px
+  &-price
+    border-radius: 8px
+    padding: 28px
+    height: 210px
+    width: 350px
+    display: flex
+    background-color: $dark-color
+    color: white
+    font-family: 'Nunito'
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 27px
+    &-right
+      display: flex
+      align-items: center
+    &-block
+      width: 100%
+    &-info
+      &__person
+        font-weight: normal
+        font-size: 12px
+        line-height: 16px
+        +priceRow
+      &__room
+        font-weight: normal
+        font-size: 12px
+        line-height: 16px
+        margin-bottom: 9px
+        +priceRow
+      &__booking
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+        +priceRow
+    &-button
+      width: 100%
+      padding: 13px 82px
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      background-color: $primary
+      border: none
+      border-radius: 4px
+      color: white
+    &-left
+      &__start
+        font-weight: normal
+        font-size: 10px
+        line-height: 14px
+      &__pricetag
+        font-weight: 800
+        font-size: 24px
+        line-height: 33px
+        margin-bottom: 1px
+      &__duration
+        font-weight: normal
+        font-size: 12px
+        line-height: 16px
+      &__booking
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+      
   &-info
     padding-top: 24px
     padding-bottom: 20px
@@ -54,25 +138,27 @@
 .stars
   width: 100%
 .swiper
+  &-img
+    height: 100%
+    width: 100%
   &-container
     position: relative
+    margin: 0
+    border-radius: 8px
+    width: 100%
     height: 450px
-    width: 728px
     &:after
       content: ''
       width: 100%
-      height: 100%
+      max-height: 100%
       position: absolute
       z-index: 50
       top: 0
       right: 0
       left: 0
       bottom: 0
+      border-radius: 8px
       background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-  &-img
-    height: 450px
-    width: 728px
-    border-radius: 8px
   &-button 
     outline: none
     cursor: pointer
@@ -92,3 +178,11 @@
     &--next
       background-image: url(../img/arrow-next.svg)
       right: 27px
+.price-map-block
+  display: flex
+  margin: 0
+  flex-direction: column
+  height: 450px
+.map
+  height: 210px
+  width: 350px

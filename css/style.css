@@ -5,7 +5,7 @@
 
 .container {
   margin: auto;
-  width: 1060px;
+  width: 1108px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,6 +180,149 @@ header {
   margin-right: 4px;
 }
 
+.hotel-grid_inside {
+  width: 728px;
+  max-height: 100%;
+  margin-right: 20px;
+}
+
+.hotel-grid-container {
+  padding-bottom: 70px;
+}
+
+.hotel-person-img {
+  height: 14px;
+  width: 14px;
+  margin-right: 13px;
+}
+
+.hotel-house-img {
+  height: 12px;
+  width: 13px;
+  margin-right: 15px;
+}
+
+.hotel-phone-img {
+  height: 13px;
+  width: 13px;
+  margin-right: 8px;
+}
+
+.hotel-price {
+  border-radius: 8px;
+  padding: 28px;
+  height: 210px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0A223D;
+  color: white;
+  font-family: 'Nunito';
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 27px;
+}
+
+.hotel-price-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-price-block {
+  width: 100%;
+}
+
+.hotel-price-info__person {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-price-info__room {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-price-info__booking {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-price-button {
+  width: 100%;
+  padding: 13px 82px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.hotel-price-left__start {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.hotel-price-left__pricetag {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 1px;
+}
+
+.hotel-price-left__duration {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.hotel-price-left__booking {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
 .hotel-info {
   padding-top: 24px;
   padding-bottom: 20px;
@@ -272,30 +415,32 @@ header {
   width: 100%;
 }
 
+.swiper-img {
+  height: 100%;
+  width: 100%;
+}
+
 .swiper-container {
   position: relative;
+  margin: 0;
+  border-radius: 8px;
+  width: 100%;
   height: 450px;
-  width: 728px;
 }
 
 .swiper-container:after {
   content: '';
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   position: absolute;
   z-index: 50;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  border-radius: 8px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-}
-
-.swiper-img {
-  height: 450px;
-  width: 728px;
-  border-radius: 8px;
 }
 
 .swiper-button {
@@ -324,15 +469,35 @@ header {
   right: 27px;
 }
 
+.price-map-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 450px;
+}
+
+.map {
+  height: 210px;
+  width: 350px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .swiper-container {
+    width: 600px;
   }
 }
 
 @media (max-width: 992px) {
   .container {
-    max-width: 700px;
+    max-width: 90%;
   }
   .logo {
     margin-right: auto;
@@ -349,17 +514,58 @@ header {
     width: 132px;
     height: 18px;
   }
+  .swiper-container {
+    width: 450px;
+  }
+  .swiper-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 85%;
+    max-width: 700px;
   }
   .search {
     max-width: 300px;
   }
   .logo {
     margin-right: 47px;
+  }
+  .swiper-container {
+    width: 700px;
+  }
+  .swiper-img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .hotel-price {
+    width: 340px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .hotel-grid_inside {
+    margin-bottom: 30px;
+  }
+  .hotel-grid-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price-map-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .map {
+    width: 340px;
   }
 }
 
@@ -403,8 +609,22 @@ header {
 }
 
 @media (max-width: 480px) {
+  .container {
+    width: 87%;
+  }
   .stars {
     max-width: 60px;
+  }
+  .hotel-price {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .hotel-grid_inside {
+    margin-top: 18px;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 250px;
   }
   .hotel-info__text {
     width: 100%;
@@ -422,6 +642,19 @@ header {
   .hotel-info__text__name {
     width: 100%;
     margin-top: 14px;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .map {
+    width: 420px;
+  }
+}
+
+@media (max-width: 320px) {
+  .map {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

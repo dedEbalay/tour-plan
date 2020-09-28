@@ -4,9 +4,12 @@
 @media ( max-width: 1200px )
   .container
     max-width: 960px
+  .swiper
+    &-container
+      width: 600px
 @media ( max-width: 992px )
   .container
-    max-width: 700px
+    max-width: 90%
   .logo
     margin-right: auto
   .header
@@ -18,18 +21,46 @@
     width: 340px
   .logo
     width: 132px
-    height: 18px
+    height: 18px 
+  .swiper
+    &-container
+      width: 450px
+    &-img
+      object-fit: cover
 @media ( max-width: 768px )
   .container
-    max-width: 85%
+    max-width: 700px
   .search
     max-width: 300px
   .logo
     margin-right: 47px
+  .swiper
+    &-container
+      width: 700px
+    &-img
+      object-fit: fill
+  .hotel
+    &-price
+      width: 340px
+      margin-bottom: 0
+      margin-right: 20px
+    &-grid
+      &_inside
+        margin-bottom: 30px
+      &-container
+        flex-wrap: wrap
+  .price-map-block
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 100%
+  .map
+    width: 340px
 @media ( max-width: 700px )
-  .hotel-info
-    &__rating
-      display: none
+  .hotel
+    &-info
+      &__rating
+        display: none
   .container
     justify-content: space-between
   .search, .login, .row--bottom
@@ -50,17 +81,37 @@
       width: 16px
       background-color: $text-color
 @media ( max-width: 480px )
+  .container
+    width: 87%
   .stars
     max-width: 60px
-  .hotel-info
-    &__text
+  .hotel
+    &-price
       width: 100%
-      &__top
-        justify-content: space-between
-      &__offer
-        order: -1
-      &__name
+      margin-right: 0
+      margin-bottom: 20px
+    &-grid
+      &_inside
+        margin-top: 18px
         width: 100%
-        margin-top: 14px
-  
-  
+        margin-bottom: 20px
+        height: 250px
+    &-info
+      &__text
+        width: 100%
+        &__top
+          justify-content: space-between
+        &__offer
+          order: -1
+        &__name
+          width: 100%
+          margin-top: 14px     
+  .swiper
+    &-container
+      width: 100%
+      height: 100%
+  .map
+    width: 420px
+@media ( max-width:  320px)
+  .map
+    width: 100%
