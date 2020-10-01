@@ -1,13 +1,57 @@
 @import '../_mixins'
 
 .hotel
+  &-swiper
+    border-radius: 8px
+    &-img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &-container
+      position: relative
+      margin: 0
+      border-radius: 8px 
+    &-button 
+      outline: none
+      cursor: pointer
+      background-position: center
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 100
+      width: 30px
+      height: 30px
+      background-color: transparent
+      border: none
+      background-repeat: no-repeat
+      &--prev
+        background-image: url(../img/arrow-prev.svg)
+        left: 27px
+      &--next
+        background-image: url(../img/arrow-next.svg)
+        right: 27px
+    &-slide
+      position: relative
+      max-height: 450px
+      &:after
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        z-index: 150
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        border-radius: 8px
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
   &-grid
     &_inside
       width: 728px
       max-height: 100%
       margin-right: 20px
     &-container
-      padding-bottom: 70px
+      margin-bottom: 70px
   &-person-img
     height: 14px
     width: 14px
@@ -137,52 +181,14 @@
           line-height: 10px
 .stars
   width: 100%
-.swiper
-  &-img
-    height: 100%
-    width: 100%
-  &-container
-    position: relative
-    margin: 0
-    border-radius: 8px
-    width: 100%
-    height: 450px
-    &:after
-      content: ''
-      width: 100%
-      max-height: 100%
-      position: absolute
-      z-index: 50
-      top: 0
-      right: 0
-      left: 0
-      bottom: 0
-      border-radius: 8px
-      background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-  &-button 
-    outline: none
-    cursor: pointer
-    background-position: center
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    z-index: 100
-    width: 30px
-    height: 30px
-    background-color: transparent
-    border: none
-    background-repeat: no-repeat
-    &--prev
-      background-image: url(../img/arrow-prev.svg)
-      left: 27px
-    &--next
-      background-image: url(../img/arrow-next.svg)
-      right: 27px
+
 .price-map-block
   display: flex
   margin: 0
   flex-direction: column
-  height: 450px
+  
 .map
   height: 210px
   width: 350px
+  border-radius: 10px
+  border: none

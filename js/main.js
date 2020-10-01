@@ -1,4 +1,4 @@
-var mySwiper = new Swiper(".swiper-container", {
+var hotelSwiper = new Swiper(".swiper-container", {
 	keyboard: {
 		enabled: true,
 		onlyInViewport: false,
@@ -14,4 +14,16 @@ var mySwiper = new Swiper(".swiper-container", {
 	},
 });
 
-angular.module("MyApp", ["ymaps"]);
+var rewiesSwiper = new Swiper(".rewies-swiper", {
+	keyboard: {
+		enabled: true,
+	},
+	// Optional parameters
+	loop: true,
+
+	// Navigation arrows
+	navigation: {
+		nextEl: ".rewies-swiper-button__next",
+		prevEl: ".rewies-swiper-button__prev",
+	},
+});

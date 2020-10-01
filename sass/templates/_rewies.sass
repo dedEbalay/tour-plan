@@ -1,0 +1,95 @@
+@import '../_var'
+
+.rewies
+  display: flex
+  align-items: center
+  flex-direction: column
+  padding-top: 40px
+  margin-bottom: 70px
+  &-container
+    flex-direction: column
+    align-items: center
+    position: relative
+  &-title
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin: 0 0 70px 0
+  &-swiper
+    width: 731px
+    &-author
+      background-color: white
+      display: flex
+      flex-direction: column
+      align-items: center
+      border-radius: 8px
+      position: relative
+      margin-top: 45px
+      &:before
+        content: ''
+        width: 100px
+        height: 100px
+        background-image: url(../img/quote-left.svg)
+        background-repeat: no-repeat
+        position: absolute
+        top: 12px
+        left: 64px
+      &:after
+        content: ''
+        width: 100px
+        height: 100px
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
+        position: absolute
+        top: 118px
+        right: 62px
+      &__avatar
+        width: 90px
+        height: 90px
+        border-radius: 50%
+        object-fit: cover
+        position: absolute
+        top: -45px
+        right: 50%
+        transform: translateX(50%)
+      &__name
+        margin-top: 54px
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: $primary
+        margin-bottom: 10px
+      &__last-date
+        font-weight: normal
+        font-size: 10px
+        line-height: 13px
+        color: #000
+        margin-bottom: 5px
+      &__text
+        font-weight: normal
+        font-size: 12px
+        line-height: 160%
+        padding: 30px 95px 30px 99px
+        z-index: 2
+    &-button
+      top: 68%
+      transform: translateY(-50%)
+      padding: 0
+      outline: none
+      cursor: pointer
+      background-position: center
+      width: 30px
+      height: 30px
+      position: absolute
+      background-color: transparent
+      border: none
+      background-repeat: no-repeat
+      z-index: 100111
+      &__prev
+        background-image: url(../img/arrow-prev-bottom.svg)
+        left: 30px
+      &__next
+        background-image: url(../img/arrow-next-bottom.svg)
+        right: 30px
