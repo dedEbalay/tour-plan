@@ -2,6 +2,10 @@
 @import 'var'
 
 @media ( max-width: 1200px )
+  .activities
+    &-block
+      width: 49.05%
+      margin-bottom: 20px
   .container
     max-width: 80%
   .hotel
@@ -73,7 +77,6 @@
         width: 100%
         margin-bottom: 30px
         margin-right: 0
-  
   .map
     width: 48%
   .subscribe
@@ -82,6 +85,13 @@
   .rewies
     &-swiper
       width: 579px
+      &-author
+        &__text
+          padding: 33px 60px 30px 64px
+        &:after
+          display: none
+        &:before
+          display: none
       &-button
         &__prev
           left: 0
@@ -127,6 +137,12 @@
       flex-direction: column
       align-items: start
 @media (max-width: 660px)
+  .activities
+    &-block
+      width: 97.225%
+      &-container
+        flex-direction: column
+        align-items: center
   .map
     width: 100%
   .hotel
@@ -198,3 +214,33 @@
 @media ( max-width:  320px)
   .map
     width: 100%
+  .subscribe
+    &-title
+      &__p1
+        font-weight: 300
+        font-size: 20px
+        line-height: 25px
+      &__p2
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+  .rewies
+    &-title
+      font-size: 18px
+      line-height: 23px
+    .rewies
+      &-swiper
+        &-button
+          top: 134px
+        &-author
+          &__text
+            padding: 33px 29px 36px 33px
+  .hotel
+    &-price
+      padding: 29px 21px 26px 22px
+      &-button
+        padding: 0
+        width: 235px
+        height: 45px
+        
+

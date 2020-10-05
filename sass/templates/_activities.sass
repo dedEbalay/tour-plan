@@ -1,0 +1,69 @@
+@import '../_var'
+.activities
+  margin-bottom: 98px
+  &-title
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    text-transform: uppercase
+    margin-bottom: 57px
+    margin-top: 0
+  &-container
+    flex-direction: column
+    align-items: start
+  &-block
+    width: 255px
+    height: 255px
+    padding: 24px 26px
+    background-repeat: no repeat
+    background-position: center
+    position: relative
+    border-radius: 6px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    background-size: cover
+    &__button
+      z-index: 100
+      background-color: $primary
+      border: none
+      width: 100px
+      height: 30px
+      border-radius: 4px
+      font-weight: 600
+      font-size: 12px
+      line-height: 16px
+      font-family: 'Nunito'
+      color: white
+      margin-top: 18px
+    &__text
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      color: white
+      z-index: 100
+    &-container
+      width: 100%
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    &:after
+      content: ''
+      background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%)
+      border-radius: 6px
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+    &__1st
+      background-image: url(../img/act-block_1st.jpg)
+    &__2nd
+      background-image: url(../img/act-block_2nd.jpg)
+    &__3th
+      background-image: url(../img/act-block_3th.jpg)
+    &__4th
+      background-image: url(../img/act-block_4th.jpg)
+
