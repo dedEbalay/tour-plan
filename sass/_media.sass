@@ -12,7 +12,7 @@
     &-price
       width: 48%
     &-swiper
-      
+
       &-slide
         width: 100%
         height: 100%
@@ -34,6 +34,9 @@
     width: 100%
   .map
     width: 48%
+  .footer
+    &-grid
+      row-gap: 40px
 @media ( max-width: 992px )
   .container
     max-width: 90%
@@ -48,7 +51,7 @@
     width: 340px
   .logo
     width: 132px
-    height: 18px 
+    height: 18px
   .map
     max-width: 100%
   .hotel
@@ -57,7 +60,13 @@
   .swiper
     &-container
       width: 100%
-
+  .footer
+    &-bottom-grid
+      grid-template: 1fr / 1fr 1.6fr 1fr
+    &-super
+      width: 100%
+    &-grid
+      grid-template: 230px 23px 1fr / repeat(4, 1fr)
 @media ( max-width: 768px )
   .container
     max-width: 90%
@@ -99,6 +108,42 @@
           right: 0
   .price-map-block
     margin-top: 0
+  .footer
+    &-partners
+      grid-column: 2/3
+    &-bottom-grid
+      grid-template: 1fr / 283px 1fr
+    &-super
+      grid-column: 1 / 2
+    &-logo
+      width: 104px
+      height: 120px
+      order: 0
+      grid-row: 1 span
+    &-socnetwork
+      order: 1
+      grid-column: 2 span
+    &-categories
+      grid-row: 1 span
+      order: 2
+    &-addinformation
+      order: 3
+    &-leginformation
+      order: 4
+    &-contacts
+      margin-top: 0
+      order: 5
+      grid-column: 3 span
+    &-feedback
+      margin-top: 0
+      order: 6
+      grid-column: 3 span
+      &-container
+        width: 78%
+    &-grid
+      grid-template: none
+      grid-auto-rows: max-content
+      grid-template-columns: repeat(3, 1fr)
 @media ( max-width: 700px )
   .hotel
     &-price
@@ -136,6 +181,11 @@
     &-container
       flex-direction: column
       align-items: start
+  .footer
+    &-feedback
+      width: 100%
+      &-container
+        width: 100%
 @media (max-width: 660px)
   .activities
     &-block
@@ -185,7 +235,7 @@
           order: -1
         &__name
           width: 100%
-          margin-top: 14px    
+          margin-top: 14px
   .rewies
     &-title
       margin-bottom: 42px
@@ -195,8 +245,7 @@
         &__prev
           left: 20%
         &__next
-          right: 20% 
-  
+          right: 20%
   .map
     width: 100%
   .subscribe
@@ -205,12 +254,72 @@
       &__row
         &-input
           width: 280px
+  .footer
+    padding-bottom: 20px
+    padding-top: 70px
+    &-partners
+      justify-content: start
+      grid-row: 2 / 3
+      grid-column: 1 / 2
+    &-bottom-grid
+      grid-template: 1fr 1fr / 1fr
+    &-logo
+      order: 0
+    &-socnetwork
+      margin: 0
+      display: flex
+      flex-wrap: wrap
+      width: 100%
+      order: 1
+      grid-column: 1 span
+      &__text
+        margin-right: 0
+        flex-basis: 100%
+        margin-bottom: 22px
+    &-leginformation
+      margin: 0
+      width: 100%
+      order: 2
+    &-addinformation
+      margin: 0
+      width: 100%
+      order: 3
+    &-categories
+      margin: 0
+      width: 100%
+      order: 4
+    &-contacts
+      margin: 0
+      margin-top: 10px
+      width: 100%
+      order: 5
+      grid-column: 1 span
+    &-feedback
+      margin-bottom: 30px
+      margin-top: 30px
+      width: 100%
+      order: 6
+      grid-column: 1 span
+      &__message
+        margin-bottom: 15px
+      &__button
+        order: 1
+      &__lemma
+        order: 0
+        margin-bottom: 15px
+      &__bottom
+        flex-direction: column
+        align-items: start
+      &__name, &__phone
+        width: 100%
+    &-grid
+      grid-template-columns: 1fr
+      gap: 30px
 @media ( max-width: 344px )
   .rewies
     &-swiper
       &-button
         top: 222px
-  
 @media ( max-width:  320px)
   .map
     width: 100%
@@ -242,5 +351,3 @@
         padding: 0
         width: 235px
         height: 45px
-        
-
