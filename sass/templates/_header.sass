@@ -12,16 +12,20 @@ header
   height: 40px
   width: 350px
   margin-right: auto
+  &__mobile
+    &--visible
+      display: none
   +tede
-  .search_input
-    width: 95%
+  &_input
+    width: 100%
     padding-right: 70px
     background: #F5FAFE
     border-radius: 6px
     height: 100%
     padding-left: 10px
-    +border   
-  .search_button
+    outline: none
+    +border
+  &_button
     position: absolute
     top: 0
     right: 0
@@ -45,7 +49,10 @@ header
   align-items: center
   font-size: 14px
   +tede
-  .login__img
+  &__mobile
+    &--visible
+      display: none
+  &__img
     margin-right: 18px
     height: 40px
     width: 40px
@@ -55,9 +62,7 @@ header
   background: $dark-color
   height: 80px
 .header-link
-  +botrow 
+  +botrow
 .adaptive-button
   display: none
   padding: 0
-
-

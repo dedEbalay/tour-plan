@@ -154,12 +154,19 @@
   .container
     justify-content: space-between
     width: 90%
-  .search, .login, .row--bottom
+  .search
     display: none
+    &__mobile
+      &--visible
+        display: block
+        position: relative
+        width: 243px
+        height: 40px
   .logo
     width: 100px
     height: 14px
   .adaptive-button
+    outline: none
     height: 11px
     width: 16px
     display: flex
@@ -186,6 +193,51 @@
       width: 100%
       &-container
         width: 100%
+  .row
+    &--top
+      position: fixed
+      top: 0
+      right: 0
+      left: 0
+      z-index: 5000111
+    &--bottom
+      &__mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+          flex-direction: column
+          height: 100vh
+  body
+    padding-top: 94px
+  .header
+    &-link
+      margin-bottom: 20px
+    &-container
+      &--bottom
+        margin: 0
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: start
+        padding-top: 45px
+  .login
+    display: none
+    height: auto
+    &__img
+      margin-right: 0
+      margin-bottom: 10px
+    &__mobile
+      &--visible
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: auto
+        font-size: 14px
+        line-height: 18px
+        text-transform: none
+        margin-bottom: 27
+        font-weight: normal
 @media (max-width: 660px)
   .activities
     &-block

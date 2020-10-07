@@ -27,3 +27,10 @@ var rewiesSwiper = new Swiper(".rewies-swiper", {
 		prevEl: ".rewies-swiper-button__prev",
 	},
 });
+
+var mobileButton = document.querySelector(".adaptive-button");
+mobileButton.addEventListener("click", function () {
+	document
+		.querySelector(".row--bottom")
+		.classList.toggle("row--bottom__mobile--visible");
+});
