@@ -1056,6 +1056,13 @@ header {
 }
 
 .footer-super {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 283px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -1260,6 +1267,7 @@ header {
   padding-left: 23px;
   outline: none;
   margin-bottom: 23px;
+  padding: 18px 23px;
 }
 
 .footer-feedback-title {
