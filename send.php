@@ -24,13 +24,13 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'lonshakov.max@gmail.com'; // Логин на почте
-    $mail->Password   = '27(YqtxBGtEn'; // Пароль на почте
+    $mail->Password   = 'reddragoN24'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('lonshakov.max@gmail.com', 'Лоншаков Максим'); // Адрес самой почты и имя отправителя
@@ -53,4 +53,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thnxu.html');

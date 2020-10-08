@@ -48,6 +48,10 @@ p {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1296,6 +1300,7 @@ header {
 }
 
 .modal__close {
+  cursor: pointer;
   position: absolute;
   top: 17px;
   right: 18px;
@@ -1334,6 +1339,10 @@ header {
 }
 
 .modal-window__button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
@@ -1595,6 +1604,11 @@ header {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
+  .modal-window {
+    width: 90%;
+    height: 90%;
+    padding: 30px 40px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1780,6 +1794,11 @@ header {
   .rewies-swiper {
     width: 90%;
   }
+  .modal-window {
+    -webkit-transform: translateY(-50%, 50%);
+            transform: translateY(-50%, 50%);
+    width: 90%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1939,15 +1958,6 @@ header {
             order: 0;
     margin-bottom: 15px;
   }
-  .footer-feedback__bottom {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-  }
   .footer-feedback__name, .footer-feedback__phone {
     width: 100%;
   }
@@ -1955,6 +1965,10 @@ header {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     gap: 30px;
+  }
+  .modal-window {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -1995,6 +2009,12 @@ header {
     padding: 0;
     width: 235px;
     height: 45px;
+  }
+}
+
+@media (max-height: 524px) {
+  .modal-window {
+    overflow-y: scroll;
   }
 }
 /*# sourceMappingURL=style.css.map */
