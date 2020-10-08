@@ -1574,7 +1574,6 @@ header {
     width: 100%;
   }
   .row--top {
-    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -1584,6 +1583,11 @@ header {
     display: none;
   }
   .row--bottom__mobile--visible {
+    position: relative;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 155550050505;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1591,15 +1595,24 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100vh;
+    height: 95vh;
+    overflow-y: scroll;
   }
   body {
     padding-top: 94px;
+  }
+  .header {
+    top: 0;
+    position: fixed;
+    z-index: 99991111;
+    width: 100%;
   }
   .header-link {
     margin-bottom: 20px;
   }
   .header-container--bottom {
+    position: absolute;
+    overflow-y: scroll;
     margin: 0;
     height: 100%;
     display: -webkit-box;
@@ -1613,6 +1626,7 @@ header {
         -ms-flex-pack: start;
             justify-content: start;
     padding-top: 45px;
+    padding-bottom: 68px;
   }
   .login {
     display: none;
