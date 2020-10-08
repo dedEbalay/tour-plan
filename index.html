@@ -5,10 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Lesson-26 homework</title>
 		<link rel="stylesheet" href="css/style.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
+
 		<link
 			href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
 			rel="stylesheet"
@@ -202,7 +199,7 @@
 								</div>
 							</div>
 						</div>
-						<button class="button hotel-price-button">
+						<button data-toggle="modal" class="button hotel-price-button">
 							View&nbspOther&nbspOptions
 						</button>
 					</div>
@@ -903,6 +900,44 @@
 			</div>
 			<!-- /FOOTER-CONTAINER -->
 		</footer>
+		<section class="modal">
+			<div class="modal-background"></div>
+			<div class="modal-window">
+				<a href="#" class="modal__close"
+					><img src="img/close.svg" alt="close icon"
+				/></a>
+				<h2 class="modal-window__title">Booking</h2>
+				<div class="modal-window__block--top">
+					<form action="#" class="modal-window__form">
+						<input
+							type="text"
+							class="modal-window__form__name"
+							placeholder="Your Full Name*"
+						/>
+						<input
+							type="text"
+							class="modal-window__form__phone"
+							placeholder="Phone Number*"
+						/>
+						<input
+							type="text"
+							class="modal-window__form__email"
+							placeholder="Email*"
+						/>
+						<textarea
+							name="message"
+							class="modal-window__form__message"
+							placeholder="Message"
+						></textarea>
+					</form>
+					<div class="modal-window__block--bottom">
+						<button class="modal-window__button">Send</button>
+						<span class="modal-window__text">* Required Fields</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
