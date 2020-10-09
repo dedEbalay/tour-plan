@@ -26,11 +26,12 @@
     transform: translate(-50%, -50%)
     z-index: 6
     width: 478px
-    max-height: 487px
+    max-height: 550px
     background-color: $dark-color
     padding: 33px 88px
     color: white
     border-radius: 8px
+
     &__text
       font-weight: bold
       font-size: 12px
@@ -44,11 +45,7 @@
       border-radius: 4px
       color: white
       padding: 18px 65px
-    &__block
-      &--bottom
-        display: flex
-        justify-content: space-between
-        align-items: center
+      margin-top: 15px
     &__title
       margin: 0
       margin-bottom: 15px
@@ -59,6 +56,10 @@
       text-align: center
     &__form
       width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
       &__name, &__phone, &__email, &__message
         height: 50px
         width: 100%
@@ -66,7 +67,7 @@
         padding: 18px 23px
         border: none
         max-width: 100%
-        margin-bottom: 15px
+        margin-top: 15px
       &__message
         height: 123px
         max-height: 123px

@@ -58,4 +58,21 @@ $(document).ready(function () {
 		var modalClass = $(".modal");
 		modalClass.removeClass("modal--visible");
 	}
+	$(".form").each(function () {
+		$(this).validate({
+			messages: {
+				name: {
+					required: "Enter your name",
+					minlength: "Your name must be longer then 2 symbols",
+				},
+				email: {
+					required: "Please, enter your real email",
+				},
+				phone: {
+					required: "Plese, enter your real phone number",
+				},
+			},
+		});
+	});
+	AOS.init();
 });

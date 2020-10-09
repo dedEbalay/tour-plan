@@ -10,7 +10,8 @@
 			href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="/css/normalize.css" />
+		<link rel="stylesheet" href="css/aos.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
 	</head>
 	<body>
@@ -668,25 +669,37 @@
 			<div class="container activities-container">
 				<h2 class="activities-title">Other Activities</h2>
 				<div class="activities-block-container">
-					<div class="activities-block activities-block__1st">
+					<div
+						class="activities-block activities-block__1st"
+						data-aos="zoom-in-down"
+					>
 						<span class="activities-block__text"
 							>The curious corner of chamarel</span
 						>
 						<button class="activities-block__button">Book Now</button>
 					</div>
-					<div class="activities-block activities-block__2nd">
+					<div
+						class="activities-block activities-block__2nd"
+						data-aos="zoom-in-down"
+					>
 						<span class="activities-block__text"
 							>Gymkhana club golf course</span
 						>
 						<button class="activities-block__button">Book Now</button>
 					</div>
-					<div class="activities-block activities-block__3th">
+					<div
+						class="activities-block activities-block__3th"
+						data-aos="zoom-in-down"
+					>
 						<span class="activities-block__text"
 							>Tamarind falls hiking trip - full day
 						</span>
 						<button class="activities-block__button">Book Now</button>
 					</div>
-					<div class="activities-block activities-block__4th">
+					<div
+						class="activities-block activities-block__4th"
+						data-aos="zoom-in-down"
+					>
 						<span class="activities-block__text"
 							>The blue marine discovery quest</span
 						>
@@ -845,21 +858,28 @@
 						</li>
 					</ul>
 					<!-- /CONTACTS-DETAILS -->
-					<form action="send.php" method="POST" class="footer-feedback">
+					<form action="send.php" method="POST" class="footer-feedback form">
 						<h2 class="footer-title footer-feedback-title">Send Us Message</h2>
 						<div class="footer-feedback-container">
-							<input
-								type="text"
-								class="footer-feedback__name"
-								placeholder="Your Full Name*"
-								name="name"
-							/>
-							<input
-								type="text"
-								class="footer-feedback__phone"
-								placeholder="Phone Number*"
-								name="phone"
-							/>
+							<div class="footer-feedback__block">
+								<input
+									type="text"
+									class="footer-feedback__name"
+									placeholder="Your Full Name*"
+									name="name"
+									required
+									minlength="2"
+								/>
+							</div>
+							<div class="footer-feedback__block">
+								<input
+									type="tel"
+									class="footer-feedback__phone"
+									placeholder="Phone Number*"
+									name="phone"
+									required
+								/>
+							</div>
 							<textarea
 								class="footer-feedback__message"
 								placeholder="Message"
@@ -907,37 +927,43 @@
 					><img src="img/close.svg" alt="close icon"
 				/></a>
 				<h2 class="modal-window__title">Booking</h2>
-				<div class="modal-window__block--top">
-					<form action="#" class="modal-window__form">
-						<input
-							type="text"
-							class="modal-window__form__name"
-							placeholder="Your Full Name*"
-						/>
-						<input
-							type="text"
-							class="modal-window__form__phone"
-							placeholder="Phone Number*"
-						/>
-						<input
-							type="text"
-							class="modal-window__form__email"
-							placeholder="Email*"
-						/>
-						<textarea
-							class="modal-window__form__message"
-							placeholder="Message"
-						></textarea>
-					</form>
-					<div class="modal-window__block--bottom">
-						<button class="modal-window__button">Send</button>
-						<span class="modal-window__text">* Required Fields</span>
-					</div>
-				</div>
+
+				<form action="#" class="modal-window__form form">
+					<input
+						type="text"
+						class="modal-window__form__name"
+						placeholder="Your Full Name*"
+						required
+						name="name"
+						minlength="2"
+					/>
+					<input
+						type="tel"
+						class="modal-window__form__phone"
+						placeholder="Phone Number*"
+						required
+						name="phone"
+					/>
+					<input
+						type="email"
+						class="modal-window__form__email"
+						placeholder="Email*"
+						required
+						name="email"
+					/>
+					<textarea
+						class="modal-window__form__message"
+						placeholder="Message"
+					></textarea>
+					<button class="modal-window__button">Send</button>
+					<span class="modal-window__text">* Required Fields</span>
+				</form>
 			</div>
 		</section>
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/aos.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
