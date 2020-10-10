@@ -21,6 +21,10 @@
     font-size: 12px
     line-height: 15px
     &__text
+      &:hover
+        animation-name: swingY
+        animation-duration: 300ms
+        animation-fill-mode: forwards
   &-container
     flex-direction: column
   &-bottom-grid
@@ -39,6 +43,15 @@
     align-self: center
     &__youtube, &__facebook
       margin-right: 11px
+      &:hover
+        animation-name: swingY
+        animation-duration: 300ms
+        animation-fill-mode: forwards
+    &__instagram
+      &:hover
+        animation-name: swingY
+        animation-duration: 300ms
+        animation-fill-mode: forwards
     &__text
       margin-bottom: 0
       margin-right: 43px
@@ -48,7 +61,12 @@
     text-transform: none
     color: #BDBDBD
     line-height: 23px
-    animation: transeRight 0.2 timing-function delay iteration-count direction fill-mode
+    margin-right: 0
+    &:hover
+      animation-name: swing
+      animation-duration: 300ms
+      animation-timing-function: ease
+      animation-fill-mode: forwards
   &-list
     list-style: none
     padding: 0
@@ -125,6 +143,9 @@
       background-color: $primary
       border: none
       color: white
+      &:hover
+        background-color: $buttonHover
+        transition-duration: 300ms
     &-container
       width: 100%
       display: flex

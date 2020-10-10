@@ -195,7 +195,7 @@
 											alt="icon: phone-call"
 											class="hotel-phone-img"
 										/>
-										<span>12100</span>
+										<span><a href="tel:12100">12100</a></span>
 									</div>
 								</div>
 							</div>
@@ -703,9 +703,14 @@
 		<footer class="footer">
 			<div class="footer-container container">
 				<div class="footer-grid">
-					<div class="footer-logo">
-						<img src="img/logo-vert.svg" alt="" class="footer-logo__img" />
-					</div>
+					<a href="#"
+						><div class="footer-logo">
+							<img
+								src="img/logo-vert.svg"
+								alt=""
+								class="footer-logo__img"
+							/></div
+					></a>
 					<ul class="footer-categories footer-list">
 						<li class="footer-title">All categories</li>
 						<li class="footer-categories__element footer-text">
@@ -815,24 +820,23 @@
 								States</span
 							>
 						</li>
-						<li
-							class="footer-contacts__element footer-contacts__element__call footer-text"
-						>
+						<li class="footer-contacts__element footer-contacts__element__call">
 							<img
 								src="img/footer-phone.svg"
 								alt="phone icon"
 								class="footer-contacts__element__phone"
 							/>
 							<ul class="footer-contacts__element__ul">
-								<li class="footer-contacts__element__li">
-									Tel (business hours) : 269 1500
+								<li class="footer-contacts__element__li footer-text">
+									Tel (business hours) : <a href="tel:2691500">269 1500</a>
 								</li>
-								<li class="footer-contacts__element__li">
-									Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-									pm)
+								<li class="footer-contacts__element__li footer-text">
+									Tel (hotline) Monday - Saturday:
+									<a href="tel:52566138">52-56-61-38</a> (08:00 am – 20:00 pm)
 								</li>
-								<li class="footer-contacts__element__li">
-									Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+								<li class="footer-contacts__element__li footer-text">
+									Tel (hotline) Sunday:
+									<a href="tel:52566138">52-56-61-38</a> (08:00 am – 14:00 pm)
 								</li>
 							</ul>
 						</li>
@@ -844,11 +848,17 @@
 								alt="mail icon"
 								class="footer-contacts__element__mail"
 							/>
-							<a href="#">cherly.lawson@example.com</a>
+							<a href="mailto:cherly.lawson@example.com"
+								>cherly.lawson@example.com</a
+							>
 						</li>
 					</ul>
 					<!-- /CONTACTS-DETAILS -->
-					<form action="send.php" method="POST" class="footer-feedback form">
+					<form
+						action="send-footer.php"
+						method="POST"
+						class="footer-feedback form"
+					>
 						<h2 class="footer-title footer-feedback-title">Send Us Message</h2>
 						<div class="footer-feedback-container">
 							<div class="footer-feedback__block">
@@ -914,7 +924,11 @@
 				/></a>
 				<h2 class="modal-window__title">Booking</h2>
 
-				<form action="#" class="modal-window__form form">
+				<form
+					action="send-modal.php"
+					method="POST"
+					class="modal-window__form form"
+				>
 					<input
 						type="text"
 						class="modal-window__form__name"
@@ -940,6 +954,7 @@
 					<textarea
 						class="modal-window__form__message"
 						placeholder="Message"
+						name="message"
 					></textarea>
 					<button class="modal-window__button">Send</button>
 					<span class="modal-window__text">* Required Fields</span>
