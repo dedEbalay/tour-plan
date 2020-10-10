@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 	var rewiesSwiper = new Swiper(".rewies-swiper", {
 		keyboard: {
-			enabled: true,
+			enabled: false,
 		},
 		// Optional parameters
 		loop: true,
@@ -33,7 +33,7 @@ $(document).ready(function () {
 	mobileButton.addEventListener("click", function () {
 		document
 			.querySelector(".row--bottom")
-			.classList.toggle("row--bottom__mobile__visible");
+			.classList.toggle("row__mobile--visible");
 	});
 
 	var modalButton = $("[data-toggle=modal]");

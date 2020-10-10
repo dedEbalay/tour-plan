@@ -38,6 +38,9 @@
     &-grid
       grid-template: 171px 23px 1fr / repeat(4, 1fr)
       row-gap: 40px
+  .header
+    &-link
+      padding: 31px 5px
 @media ( max-width: 992px )
   .container
     max-width: 90%
@@ -48,6 +51,10 @@
       font-size: 12px
       line-height: 15px
       font-weight: bold
+      padding: 0
+      &:hover
+        background-color: $dark-color
+        transition: 0s
   .search
     width: 340px
   .logo
@@ -214,25 +221,24 @@
       &-container
         width: 100%
   .row
+    &__mobile
+      &--hidden
+        display: none
+      &--visible
+        position: relative
+        right: 0
+        left: 0
+        width: 100%
+        z-index: 4
+        display: flex
+        flex-direction: column
+        height: 95vh
+        overflow-y: scroll
     &--top
       top: 0
       right: 0
       left: 0
       z-index: 4
-    &--bottom
-      &__mobile
-        &--hidden
-          display: none
-        &__visible
-          position: relative
-          right: 0
-          left: 0
-          width: 100%
-          z-index: 4
-          display: flex
-          flex-direction: column
-          height: 95vh
-          overflow-y: scroll
   body
     padding-top: 94px
   .header
@@ -325,6 +331,7 @@
         &__name
           width: 100%
           margin-top: 14px
+          margin-right: 0
   .rewies
     &-title
       margin-bottom: 42px
