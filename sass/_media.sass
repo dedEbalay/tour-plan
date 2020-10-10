@@ -12,7 +12,6 @@
     &-price
       width: 48%
     &-swiper
-
       &-slide
         width: 100%
         height: 100%
@@ -42,6 +41,9 @@
     &-link
       padding: 31px 5px
 @media ( max-width: 992px )
+  .gb-button
+    &:hover
+      background-color: $primary
   .activities
     &-block
       &__button
@@ -108,17 +110,33 @@
       grid-template: 230px 23px 1fr / repeat(4, 1fr)
       row-gap: 40px
 @media ( max-width: 768px )
+  .activities
+    padding-bottom: 45px
+  .header
+    &-link
+      padding: 0
+    &-container
+      &--top
+        padding: 30px 0
+      &--bottom
+        width: 87%
+  .row
+    &--top
+      height: 100px
+      padding: 0
+    &--bottom
+      height: 60px
   .container
     max-width: 91.1%
   .search
-    max-width: 300px
+    max-width: 340px
   .logo
     margin-right: 47px
     &-img
       object-fit: fill
   .hotel
     &-price
-      width: 48.5%
+      width: 48%
       margin-bottom: 0
       margin-right: 20px
     &-grid
@@ -129,11 +147,24 @@
         margin-bottom: 30px
         margin-right: 0
   .map
-    width: 48.5%
+    width: 48%
   .subscribe
+    padding-top: 92px
+    padding-bottom: 93px
     &-title
-      margin-right: 8%
+      margin-right: 0
+    &-container
+      width: 100%
   .rewies
+    padding-bottom: 80px
+    &-title
+      margin-bottom: 50px
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      text-align: center
+      text-transform: uppercase
     &-swiper
       width: 579px
       &-author
@@ -151,6 +182,7 @@
   .price-map-block
     margin-top: 0
   .footer
+    padding-top: 40px
     &-partners
       grid-column: 2/3
     &-bottom-grid
@@ -163,8 +195,11 @@
       order: 0
       grid-row: 1 span
     &-socnetwork
+      align-self: center
       order: 1
       grid-column: 2 span
+      margin-left: -12px
+      margin-top: 40px
     &-categories
       grid-row: 1 span
       order: 2
@@ -173,7 +208,7 @@
     &-leginformation
       order: 4
     &-contacts
-      margin-top: 0
+      margin-top: 30px
       order: 5
       grid-column: 3 span
       &__element
@@ -188,6 +223,7 @@
       margin-top: 20px
       order: 6
       grid-column: 3 span
+      margin-bottom: 60px
       &-title
         margin-top: 0
       &-container
@@ -308,6 +344,7 @@
         text-transform: none
         margin-bottom: 27
         font-weight: normal
+
 @media (max-width: 660px)
   .activities
     &-block
@@ -452,14 +489,27 @@
       &-button
         top: 222px
 @media ( max-width:  320px)
+  body
+    padding-top: 70px
+  .logo
+    margin-top: -9px
+    padding-left: -4px
+  .header
+    &-container
+      padding: 28px 0
+  .row
+    &--top
+      height: 70px
   .container
     width: 278px
   .hotel
     &-grid
+      &-container
+        padding-bottom: 40px
       &_inside
         max-height: 179px
     &-info
-      padding-top: 5px
+      padding-top: 0
     &-swiper
       &-button
         height: 12px
@@ -472,6 +522,8 @@
   .map
     width: 100%
   .subscribe
+    &-form
+      max-width: 280px
     &-title
       &__p1
         font-weight: 300
@@ -485,21 +537,29 @@
     &-title
       font-size: 18px
       line-height: 23px
+      width: 245px
     .rewies
       &-swiper
+        margin: 0
+        width: 100%
         &-button
-          top: 134px
+          top: 118px
           &__next
             right: 37px
           &__prev
-            left: 38px
+            left: 34px
         &-author
+          width: 100%
           &__rating
             width: 48px
             height: 6px
             justify-self: center
           &__text
-            padding: 33px 29px 36px 33px
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 160%
+            padding: 33px 27px 36px 33px
   .hotel
     &-price
       padding: 29px 21px 26px 22px
@@ -508,11 +568,24 @@
         width: 235px
         height: 45px
   .activities
+    padding-top: 45px
+    padding-bottom: 40px
     &-block
       width: 100%
+      &__2nd
+        margin-bottom: 28px
     &-title
+      font-size: 18px
+      line-height: 23px
       margin-bottom: 36px
   .footer
+    padding-bottom: 40px
+    &-super
+      margin-bottom: 20px
+    &-logo
+      margin-top: 0
+      &__img
+        align-self: start
     &-feedback
       &__bottom
         flex-direction: column
@@ -523,6 +596,10 @@
     &-contacts
       &__element
         padding-left: 0
+        &__map
+          margin-right: 0
+        &__mmark
+          align-self: start
         &__mail
           margin-right: 11px
         &__phone

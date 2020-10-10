@@ -1,6 +1,8 @@
 @import '../var'
 
 .subscribe
+  padding-top: 98px
+  padding-bottom: 87px
   display: flex
   justify-content: center
   align-items: center
@@ -21,16 +23,17 @@
     height: 100%
     background-color: rgba($dark-color, 0.8)
   &-container
-    height: 75px
     display: flex
     align-items: center
     justify-content: space-between
+    flex-wrap: wrap
+    width: 731px
   &-title
     z-index: 2
     display: flex
     flex-direction: column
     color: white
-    margin-right: 139px
+    margin-right: 0
     &__p1
       margin: 0
       font-weight: 300
@@ -45,6 +48,7 @@
     &__row
       position: relative
       border-radius: 4px
+      max-width: 350px
       &-input
         width: 350px
         height: 55px

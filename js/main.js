@@ -10,8 +10,8 @@ $(document).ready(function () {
 
 		// Navigation arrows
 		navigation: {
-			nextEl: ".swiper-button--next",
-			prevEl: ".swiper-button--prev",
+			nextEl: ".hotel-swiper-button--next",
+			prevEl: ".hotel-swiper-button--prev",
 		},
 	});
 
@@ -75,4 +75,7 @@ $(document).ready(function () {
 		});
 	});
 	AOS.init();
+	$(function () {
+		$(".phone").mask("8(999)999-99-99");
+	});
 });

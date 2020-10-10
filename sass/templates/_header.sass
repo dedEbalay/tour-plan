@@ -1,8 +1,11 @@
 @import '../mixins'
 @import '../_var'
-header
+.header
   display: flex
   flex-wrap: wrap
+  &-container
+    &--bottom
+      width: 1166px
 .logo
   height: 24px
   width: 177px
@@ -22,7 +25,7 @@ header
     background: #F5FAFE
     border-radius: 6px
     height: 100%
-    padding-left: 10px
+    padding-left: 23px
     outline: none
     padding-top: 12px
     padding-bottom: 12px
@@ -72,6 +75,11 @@ header
   height: 80px
 .header-link
   padding: 31px 29px
+  font-style: normal
+  font-weight: bold
+  font-size: 14px
+  line-height: 18px
+  text-transform: uppercase
   +botrow
   &:hover
     background-color: $primary

@@ -59,19 +59,19 @@
   &-person-img
     height: 14px
     width: 14px
-    margin-right: 13px
   &-house-img
-    height: 12px
-    width: 13px
-    margin-right: 15px
+    height: 14px
+    width: 14px
   &-phone-img
     height: 13px
     width: 13px
-    margin-right: 8px
+    margin-top: 4px
+    margin-left: 5px
   &-price
     border-radius: 8px
     padding: 28px
     height: 210px
+    padding-top: 20px
     width: 350px
     display: flex
     background-color: $dark-color
@@ -80,20 +80,25 @@
     justify-content: space-between
     flex-wrap: wrap
     margin-bottom: 27px
-    &-info
-      &__booking
-        margin-bottom: 13px
     &-right
+      line-height: 20px
       display: flex
-      align-items: center
+      width: 80px
+      justify-content: space-between
+      align-items: start
     &-block
       width: 100%
     &-info
+      &__booking
+        margin-bottom: 13px
       &__person
         font-weight: normal
         font-size: 12px
         line-height: 16px
-        +priceRow
+        display: flex
+        justify-content: space-between
+        align-items: start
+        margin-top: 8px
       &__room
         font-weight: normal
         font-size: 12px
@@ -125,9 +130,11 @@
         font-size: 10px
         line-height: 14px
       &__pricetag
+        font-family: Nunito
+        font-style: normal
         font-weight: 800
         font-size: 24px
-        line-height: 33px
+        line-height: 24px
         margin-bottom: 1px
       &__duration
         font-weight: normal
@@ -137,9 +144,8 @@
         font-weight: 600
         font-size: 18px
         line-height: 25px
-
   &-info
-    padding-top: 24px
+    padding-top: 16px
     padding-bottom: 20px
     width: 100%
     display: flex
@@ -153,18 +159,18 @@
         flex-wrap: wrap
         align-items: center
       &__name
-        margin: 5px 14px 0 0
+        margin: 0 14px 0 0
         font-weight: bold
         font-size: 24px
         line-height: 30px
       &__offer
-        margin-top: 5px
         padding: 4px 9px
         background-color: $primary
         font-size: 10px
         line-height: 13px
         color: #fff
         border-radius: 4px
+        height: 20px
       &__bottom
         font-weight: normal
         font-size: 12px
@@ -180,11 +186,13 @@
       flex-direction: column
       justify-content: center
       align-items: center
+      margin-top: 4px
       &__text
         font-weight: 600
         font-size: 8px
         line-height: 10px
       &__counter
+        margin-top: 4px
         &__left
           font-size: 14px
           line-height: 18px
@@ -192,13 +200,16 @@
           font-size: 8px
           line-height: 10px
 .stars
-  width: 100%
-
+  max-width: 100%
+  flex-basis: 100%
+  width: 48px
+.star
+  width: 6px
+  height: 6px
 .price-map-block
   display: flex
   margin: 0
   flex-direction: column
-
 .map
   height: 210px
   width: 350px

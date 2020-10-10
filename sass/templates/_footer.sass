@@ -5,11 +5,19 @@
   padding-top: 108px
   padding-bottom: 46px
   color: white
+  &-not-animate
+    font-weight: normal
+    font-size: 14px
+    text-transform: none
+    color: #BDBDBD
+    line-height: 22px
+    margin-right: 0
   &-partners
     grid-column: 3/4
     height: 22px
     display: flex
     justify-content: flex-end
+    margin-top: -6px
     &__img
       width: 136px
   &-super
@@ -30,7 +38,7 @@
   &-bottom-grid
     width: 100%
     display: grid
-    grid-template: 1fr / repeat(3, 1fr)
+    grid-template: 1fr / 1.1fr 1fr 0.9fr
   &-title
     font-weight: bold
     font-size: 18px
@@ -38,6 +46,8 @@
     text-transform: uppercase
     margin-bottom: 16px
     display: block
+    &__contact
+      margin-bottom: 24px
   &-socnetwork
     display: flex
     align-self: center
@@ -60,7 +70,7 @@
     font-size: 14px
     text-transform: none
     color: #BDBDBD
-    line-height: 23px
+    line-height: 22px
     margin-right: 0
     &:hover
       animation-name: swing
@@ -72,12 +82,13 @@
     padding: 0
     margin: 0
   &-logo
+    margin-top: 30px
     grid-row: 2 span
     width: 166px
     height: 192px
     &__img
-      width: 100%
-      height: 100%
+      width: 93%
+      height: 93%
   &-categories
     grid-row: 2 span
   &-socnetwork
@@ -93,20 +104,22 @@
       display: flex
       align-items: center
       &__map
-        margin-bottom: 26px
+        margin-bottom: 18px
       &__call
         align-items: start
-        margin-bottom: 26px
+        margin-bottom: 23px
       &__ul
         padding: 0
         list-style: none
       &__phone
         margin-right: 20px
-        margin-top: 14px
+        margin-top: 6px
         height: 23px
         width: 23px
       &__mmark
-        margin-right: 20px
+        margin-top: 5px
+        margin-left: 5px
+        margin-right: 26px
         width: 14px
         height: 20px
       &__mail
@@ -179,5 +192,5 @@
       margin-bottom: 34px
   &-grid
     display: grid
-    grid-template: 171px 23px 1fr / 285px 285px 345px 195px
+    grid-template: 171px 23px 0.9fr / 285px 285px 345px 195px
     row-gap: 24px
