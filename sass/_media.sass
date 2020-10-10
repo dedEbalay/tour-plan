@@ -36,6 +36,7 @@
     width: 48%
   .footer
     &-grid
+      grid-template: 171px 23px 1fr / repeat(4, 1fr)
       row-gap: 40px
 @media ( max-width: 992px )
   .container
@@ -69,7 +70,7 @@
       grid-template: 230px 23px 1fr / repeat(4, 1fr)
 @media ( max-width: 768px )
   .container
-    max-width: 90%
+    max-width: 91.1%
   .search
     max-width: 300px
   .logo
@@ -78,16 +79,18 @@
       object-fit: fill
   .hotel
     &-price
-      width: 48%
+      width: 48.5%
       margin-bottom: 0
       margin-right: 20px
     &-grid
+      &-container
+        padding-bottom: 60px
       &_inside
         width: 100%
         margin-bottom: 30px
         margin-right: 0
   .map
-    width: 48%
+    width: 48.5%
   .subscribe
     &-title
       margin-right: 8%
@@ -134,16 +137,27 @@
       margin-top: 0
       order: 5
       grid-column: 3 span
+      &__element
+        &__map
+          margin-right: 17px
+        &__phone
+          margin-top: 4px
+          margin-right: 11px
+        &__mail
+          margin-right: 19px
     &-feedback
-      margin-top: 0
+      margin-top: 20px
       order: 6
       grid-column: 3 span
+      &-title
+        margin-top: 0
       &-container
         width: 78%
     &-grid
+      column-gap: 38px
       grid-template: none
       grid-auto-rows: max-content
-      grid-template-columns: repeat(3, 1fr)
+      grid-template-columns: 0.26fr 0.42fr 0.32fr
   .modal
     &-window
       width: 90%
@@ -162,7 +176,7 @@
   .search
     display: none
     &__mobile
-      &--visible
+      &__visible
         display: block
         position: relative
         width: 243px
@@ -208,7 +222,7 @@
       &__mobile
         &--hidden
           display: none
-        &--visible
+        &__visible
           position: relative
           right: 0
           left: 0
@@ -245,7 +259,7 @@
       margin-right: 0
       margin-bottom: 10px
     &__mobile
-      &--visible
+      &__visible
         display: flex
         flex-direction: column
         justify-content: center
@@ -323,6 +337,8 @@
   .map
     width: 100%
   .subscribe
+    align-items: start
+    padding-top: 76px
     padding-bottom: 83px
     &-form
       &__row
@@ -396,6 +412,23 @@
       &-button
         top: 222px
 @media ( max-width:  320px)
+  .container
+    width: 278px
+  .hotel
+    &-grid
+      &_inside
+        max-height: 179px
+    &-info
+      padding-top: 5px
+    &-swiper
+      &-button
+        height: 12px
+        width: 12px
+        background-size: 17px 10px
+        &--prev
+          left: 10px
+        &--next
+          right: 10px
   .map
     width: 100%
   .subscribe
@@ -416,7 +449,15 @@
       &-swiper
         &-button
           top: 134px
+          &__next
+            right: 37px
+          &__prev
+            left: 38px
         &-author
+          &__rating
+            width: 48px
+            height: 6px
+            justify-self: center
           &__text
             padding: 33px 29px 36px 33px
   .hotel
@@ -426,6 +467,29 @@
         padding: 0
         width: 235px
         height: 45px
+  .activities
+    &-block
+      width: 100%
+    &-title
+      margin-bottom: 36px
+  .footer
+    &-feedback
+      &__bottom
+        flex-direction: column
+        align-items: start
+      &-title
+        margin-top: 0
+        margin-bottom: 15px
+    &-contacts
+      &__element
+        padding-left: 0
+        &__mail
+          margin-right: 11px
+        &__phone
+          width: 23px
+          height: 23px
+          margin: 4px 8px 0 0
+
 @media ( max-height: 524px )
   .modal
     &-window

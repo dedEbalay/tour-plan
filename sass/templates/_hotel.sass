@@ -3,6 +3,7 @@
 .hotel
   &-swiper
     border-radius: 8px
+    height: 100%
     &-img
       width: 100%
       height: 100%
@@ -11,6 +12,7 @@
       position: relative
       margin: 0
       border-radius: 8px
+      max-height: 100%
     &-button
       outline: none
       cursor: pointer
@@ -32,6 +34,7 @@
         right: 27px
     &-slide
       position: relative
+      border-radius: 8px
       max-height: 450px
       &:after
         content: ''
@@ -50,8 +53,9 @@
       width: 728px
       max-height: 100%
       margin-right: 20px
+      height: 450px
     &-container
-      margin-bottom: 70px
+      padding-bottom: 70px
   &-person-img
     height: 14px
     width: 14px
@@ -76,6 +80,9 @@
     justify-content: space-between
     flex-wrap: wrap
     margin-bottom: 27px
+    &-info
+      &__booking
+        margin-bottom: 13px
     &-right
       display: flex
       align-items: center
@@ -100,7 +107,6 @@
         +priceRow
     &-button
       width: 100%
-      padding: 13px 82px
       font-weight: 600
       font-size: 14px
       line-height: 19px
@@ -108,6 +114,8 @@
       border: none
       border-radius: 4px
       color: white
+      padding-top: 13px
+      padding-bottom: 13px
     &-left
       &__start
         font-weight: normal
@@ -135,6 +143,7 @@
     justify-content: space-between
     flex-wrap: wrap
     flex-shrink: 0
+    align-items: center
     &__text
       &__top
         display: flex
@@ -192,3 +201,6 @@
   width: 350px
   border-radius: 10px
   border: none
+.swiper
+  &-wrapper
+    max-height: 450px

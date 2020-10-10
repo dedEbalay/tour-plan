@@ -33,7 +33,7 @@ $(document).ready(function () {
 	mobileButton.addEventListener("click", function () {
 		document
 			.querySelector(".row--bottom")
-			.classList.toggle("row--bottom__mobile--visible");
+			.classList.toggle("row--bottom__mobile__visible");
 	});
 
 	var modalButton = $("[data-toggle=modal]");
